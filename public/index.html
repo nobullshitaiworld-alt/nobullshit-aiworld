@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A focused, human-reviewed growth launch for small businesses: business foundation, marketing drafts, approval, and a measurable next step." />
+  <title>AI Business Growth Launch | NoBullshitAIworld</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet" />
+  <style>
+    :root { --ink:#142820; --muted:#466057; --paper:#f4f8f4; --white:#fff; --mint:#d5f0e1; --forest:#154d3d; --coral:#cc674c; --line:#ccdad1; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:var(--paper); font:16px/1.55 "DM Sans", sans-serif; }
+    a { color:inherit; }
+    a:focus-visible { outline:3px solid var(--coral); outline-offset:4px; }
+    .wrap { width:min(100% - 40px, 1120px); margin-inline:auto; }
+    .site-header { border-bottom:1px solid var(--line); background:var(--white); }
+    .nav { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { font-weight:700; font-size:19px; text-decoration:none; white-space:nowrap; }
+    .brand span { color:var(--coral); }
+    .nav-links { display:flex; align-items:center; gap:24px; font-size:14px; font-weight:600; }
+    .nav-links a { text-decoration:none; }
+    .nav-links a:hover { color:var(--forest); text-decoration:underline; text-underline-offset:4px; }
+    .eyebrow { margin:0 0 16px; color:var(--forest); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1.4px; }
+    h1, h2 { font-family:Fraunces, Georgia, serif; font-weight:600; line-height:1.08; }
+    h1 { max-width:850px; margin:0 0 26px; font-size:68px; }
+    h2 { margin:0 0 18px; font-size:42px; }
+    h3 { margin:0 0 8px; font-size:18px; }
+    p { margin-top:0; }
+    .intro { padding:86px 0 70px; background:radial-gradient(circle at 83% 14%, var(--mint), transparent 35%), var(--paper); }
+    .lead { max-width:670px; color:var(--muted); font-size:19px; }
+    .intro-meta { display:flex; flex-wrap:wrap; gap:12px 30px; align-items:center; margin:30px 0; font-weight:600; }
+    .intro-meta strong { color:var(--forest); font-size:23px; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+    .button { display:inline-flex; justify-content:center; align-items:center; min-height:48px; padding:12px 20px; border:1px solid var(--forest); border-radius:4px; background:var(--forest); color:var(--white); text-decoration:none; font-weight:700; text-align:center; }
+    .button:hover { background:var(--ink); }
+    .button.outline { background:transparent; color:var(--forest); }
+    .button.outline:hover { background:var(--mint); }
+    .note { margin:20px 0 0; color:var(--muted); font-size:13px; }
+    .section { padding:74px 0; border-top:1px solid var(--line); }
+    .section-head { max-width:720px; margin-bottom:34px; }
+    .section-head p:last-child { color:var(--muted); }
+    .scope { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 36px; }
+    .scope article { padding:22px 0; border-top:1px solid var(--line); }
+    .scope article p { margin:0; color:var(--muted); }
+    .artifact-band { background:var(--white); }
+    .artifact-layout { display:grid; grid-template-columns:minmax(0,.75fr) minmax(0,1fr); gap:55px; align-items:center; }
+    .artifact-layout > div > p { color:var(--muted); }
+    .sample { margin:0; padding:26px; border:1px solid var(--line); border-radius:4px; background:var(--paper); }
+    .sample figcaption { padding-bottom:16px; border-bottom:1px solid var(--line); font-size:12px; font-weight:700; color:var(--forest); text-transform:uppercase; }
+    .sample-row { display:grid; grid-template-columns:38px 1fr; gap:14px; padding:16px 0; border-bottom:1px solid var(--line); }
+    .sample-row:last-child { border:0; padding-bottom:0; }
+    .sample-row span { color:var(--coral); font-weight:700; }
+    .sample-row strong { display:block; }
+    .sample-row small { color:var(--muted); }
+    .steps { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; }
+    .steps article { padding-top:16px; border-top:2px solid var(--forest); }
+    .steps span { display:block; margin-bottom:18px; color:var(--coral); font-weight:700; }
+    .steps p { color:var(--muted); }
+    .contact { background:var(--mint); }
+    .contact h2 { max-width:720px; }
+    .contact p { max-width:670px; }
+    .address { display:inline-block; margin-top:18px; overflow-wrap:anywhere; font-weight:700; }
+    footer { padding:30px 0; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }
+    @media (max-width:760px) {
+      .wrap { width:min(100% - 32px, 1120px); }
+      .nav { min-height:68px; flex-wrap:wrap; padding:14px 0; }
+      .nav-links { gap:14px; }
+      .intro { padding:62px 0 56px; }
+      h1 { font-size:44px; }
+      h2 { font-size:34px; }
+      .section { padding:54px 0; }
+      .artifact-layout, .scope { grid-template-columns:1fr; gap:24px; }
+      .steps { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    }
+    @media (max-width:420px) { .steps { grid-template-columns:1fr; } .nav-links { font-size:13px; } }
+  </style>
+</head>
+<body>
+  <header class="site-header"><div class="wrap nav"><a class="brand" href="#top" aria-label="NoBullshitAIworld home">NoBullshit<span>AI</span>world</a><nav class="nav-links" aria-label="Main navigation"><a href="#scope">What you get</a><a href="#process">Process</a><a href="#contact">Contact</a></nav></div></header>
+  <main id="top">
+    <section class="intro"><div class="wrap"><p class="eyebrow">Guided service / Small business</p><h1>AI Business Growth Launch</h1><p class="lead">Get your business information, marketing direction, and first campaign drafts organized into one launch you can review before anything goes out.</p><div class="intro-meta"><strong>$299-$999</strong><span>one-time setup</span><span>Human-reviewed work</span></div><div class="actions"><a class="button" href="#contact">Discuss your launch</a><a class="button outline" href="#scope">See what is included</a></div><p class="note">Scope and final price are agreed before work begins. No guaranteed sales.</p></div></section>
+    <section class="section" id="scope"><div class="wrap"><div class="section-head"><p class="eyebrow">The deliverables</p><h2>One clear foundation. A practical first move.</h2><p>Focused work you can inspect and approve, not a promise of automatic growth.</p></div><div class="scope"><article><h3>Business foundation</h3><p>Organized services, audience, goals, and a checklist of missing facts.</p></article><article><h3>Brand and content direction</h3><p>Approved descriptions, voice, and a usable first content plan.</p></article><article><h3>Three launch creatives</h3><p>Three marketing drafts checked for accuracy, links, and policy risk.</p></article><article><h3>Results and next move</h3><p>A simple review of cost, response, leads, and what to improve next.</p></article></div></div></section>
+    <section class="section artifact-band"><div class="wrap artifact-layout"><div><p class="eyebrow">The handoff</p><h2>Know what is ready and what needs your decision.</h2><p>Your work is delivered as drafts and decisions to review. Nothing is published, sent to customers, or purchased without the required approval.</p></div><figure class="sample"><figcaption>Sample deliverable structure / Not client results</figcaption><div class="sample-row"><span>01</span><div><strong>Business facts</strong><small>Confirmed information and missing details</small></div></div><div class="sample-row"><span>02</span><div><strong>Launch drafts</strong><small>Three assets for your review</small></div></div><div class="sample-row"><span>03</span><div><strong>Approval record</strong><small>Claims, links, and customer sign-off</small></div></div><div class="sample-row"><span>04</span><div><strong>Next test</strong><small>One measurable improvement to consider</small></div></div></figure></div></section>
+    <section class="section" id="process"><div class="wrap"><div class="section-head"><p class="eyebrow">How it works</p><h2>Four steps, with you in control.</h2></div><div class="steps"><article><span>01</span><h3>Discover</h3><p>Agree on the offer, audience, scope, and facts.</p></article><article><span>02</span><h3>Build</h3><p>Prepare the foundation and first marketing drafts.</p></article><article><span>03</span><h3>Review</h3><p>Check the work together before anything is used.</p></article><article><span>04</span><h3>Improve</h3><p>Measure response and choose the next useful test.</p></article></div></div></section>
+    <section class="section contact" id="contact"><div class="wrap"><p class="eyebrow">Start a conversation</p><h2>Tell us what you want your business to do next.</h2><p>Send your business name, what you sell, and your biggest marketing need. This is an inquiry, not a purchase or a promise of results.</p><div class="actions"><a class="button" href="mailto:nobullshitaiworld@gmail.com?subject=Growth%20Launch%20consultation">Email about Growth Launch</a><a class="button outline" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=nobullshitaiworld%40gmail.com&amp;su=Growth%20Launch%20consultation" target="_blank" rel="noopener noreferrer">Compose in Gmail</a></div><a class="address" href="mailto:nobullshitaiworld@gmail.com">nobullshitaiworld@gmail.com</a></div></section>
+  </main>
+  <footer><div class="wrap">NoBullshitAIworld · Human-reviewed work · No guaranteed revenue or unauthorized publishing</div></footer>
+</body>
+</html>
